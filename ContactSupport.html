@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AIConnect - Contact Support</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="ai-bg">
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg landing-nav">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="CHaa.png" alt="AIConnect" class="nav-logo me-2">
+                <span class="nav-title">AIConnect</span>
+            </a>
+
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+                data-bs-target="#supportNav" aria-controls="supportNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end" id="supportNav">
+                <ul class="navbar-nav mb-2 mb-lg-0 align-items-lg-center">
+                    <li class="nav-item me-lg-3">
+                        <a class="nav-link nav-link-light" href="StudentDashboard.html">
+                            Dashboard
+                        </a>
+                    </li>
+                    <li class="nav-item me-lg-3">
+                        <a class="nav-link nav-link-light active" aria-current="page" href="ContactSupport.html">
+                            Contact Support
+                        </a>
+                    </li>
+                    <li class="nav-item mt-2 mt-lg-0">
+                        <a href="Login.html" class="btn btn-outline-light btn-sm px-3">
+                            Logout
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container dashboard-container py-4">
+
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-8 col-lg-6">
+
+                <div class="dashboard-section">
+
+                    <h3 class="dashboard-title mb-2 text-center">Contact Support</h3>
+                    <p class="dashboard-subtitle text-center mb-4">
+                        If you are facing any issue, please submit your request and our admin team will review it.
+                    </p>
+
+                    <form>
+
+                        <!-- Issue Type -->
+                        <div class="mb-3">
+                            <label class="form-label text-white">Issue type</label>
+                            <select class="form-select ai-input-select">
+                                <option selected disabled>Select an issue</option>
+                                <option>Account issue</option>
+                                <option>CV upload problem</option>
+                                <option>Company verification</option>
+                                <option>Job offer issue</option>
+                                <option>Other</option>
+                            </select>
+                        </div>
+
+                        <!-- Message -->
+                        <div class="mb-4">
+                            <label class="form-label text-white">Message</label>
+                            <textarea class="form-control ai-input" rows="5"
+                                placeholder="Describe your issue clearly..."></textarea>
+                        </div>
+
+                        <!-- Buttons -->
+                        <div class="d-flex flex-column gap-2">
+                            <!-- بروتوتايب: بعد الإرسال نرجع للداشبورڈ -->
+                            <a href="StudentDashboard.html" class="btn ai-btn-main">
+                                Send request
+                            </a>
+                            <a href="StudentDashboard.html" class="btn ai-btn-ghost">
+                                Cancel
+                            </a>
+                        </div>
+
+                    </form>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
