@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AIConnect - Student Dashboard</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="ai-bg">
+
+    <!-- Top Navbar (داخل النظام) -->
+    <nav class="navbar navbar-expand-lg landing-nav">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="CHaa.png" alt="AIConnect" class="nav-logo me-2">
+                <span class="nav-title">AIConnect</span>
+            </a>
+
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+                data-bs-target="#dashboardNav" aria-controls="dashboardNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end" id="dashboardNav">
+                <ul class="navbar-nav mb-2 mb-lg-0 align-items-lg-center">
+                    <li class="nav-item me-lg-3">
+                        <a class="nav-link nav-link-light active" aria-current="page" href="StudentDashboard.html">
+                            Dashboard
+                        </a>
+                    </li>
+                    <li class="nav-item me-lg-3">
+                        <a class="nav-link nav-link-light" href="#">
+                            My profile
+                        </a>
+                    </li>
+                    <li class="nav-item me-lg-3">
+                        <a class="nav-link nav-link-light" href="RecommendedOffers.html">
+                            Recommended offers
+                        </a>
+                    </li>
+                    </li>
+                    <li class="nav-item me-lg-3">
+                        <a class="nav-link nav-link-light" href="ContactSupport.html">
+                            Contact Support
+                        </a>
+                    </li>
+                    <li class="nav-item mt-2 mt-lg-0">
+                        <a href="Login.html" class="btn btn-outline-light btn-sm px-3">
+                            Logout
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Dashboard Content -->
+    <div class="container dashboard-container py-4">
+
+        <!-- Header row -->
+        <div class="row align-items-center mb-4">
+            <div class="col-12 col-md-8">
+                <h2 class="dashboard-title">
+                    Welcome, <span class="highlight-name">Student Name</span>
+                </h2>
+                <p class="dashboard-subtitle">
+                    Here is an overview of your AIConnect profile and AI-based recommended opportunities.
+                </p>
+            </div>
+            <div class="col-12 col-md-4 text-md-end mt-3 mt-md-0">
+                <a href="UploadCV.html" class="btn ai-btn-main me-2 mb-2">Upload CV</a>
+                <a href="#" class="btn ai-btn-ghost mb-2">Edit profile</a>
+            </div>
+        </div>
+
+        <!-- Stats row -->
+        <div class="row g-3 mb-4">
+            <div class="col-12 col-md-4">
+                <div class="stat-card">
+                    <div class="stat-label">CV status</div>
+                    <div class="stat-number">Not uploaded</div>
+                    <div class="stat-hint">Upload your CV to enable AI analysis and matching.</div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-4">
+                <div class="stat-card">
+                    <div class="stat-label">Recommended offers</div>
+                    <div class="stat-number">3</div>
+                    <div class="stat-hint">
+                        Based on your CV analysis and profile data.
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-4">
+                <div class="stat-card">
+                    <div class="stat-label">Profile completeness</div>
+                    <div class="stat-number">60%</div>
+                    <div class="stat-hint">Add more details to get better matches.</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main sections -->
+        <div class="row g-4">
+            <!-- Recommended offers -->
+            <div class="col-12 col-lg-8">
+                <div class="dashboard-section">
+                    <h4 class="section-heading mb-3">Recommended opportunities</h4>
+
+                    <!-- Job card 1 -->
+                    <div class="job-card mb-3">
+                        <div class="d-flex justify-content-between flex-wrap">
+                            <div>
+                                <h5 class="job-title">Junior Web Developer Intern</h5>
+                                <p class="job-meta mb-1">TechBridge Solutions · Amman · Part-time</p>
+                                <p class="job-meta-small mb-2">
+                                    Recommended based on your CV analysis (detected web development skills and tools).
+                                </p>
+                            </div>
+                            <div class="text-lg-end">
+                                <span class="job-tag">Internship</span>
+                                <span class="job-tag">On-site</span>
+                            </div>
+                        </div>
+                        <button class="btn ai-btn-main btn-sm mt-2">View details</button>
+                    </div>
+
+                    <!-- Job card 2 -->
+                    <div class="job-card mb-3">
+                        <div class="d-flex justify-content-between flex-wrap">
+                            <div>
+                                <h5 class="job-title">Backend Developer Trainee</h5>
+                                <p class="job-meta mb-1">CloudWay · Remote · Training</p>
+                                <p class="job-meta-small mb-2">
+                                    Recommended based on your CV analysis (PHP, databases and backend-related skills).
+                                </p>
+                            </div>
+                            <div class="text-lg-end">
+                                <span class="job-tag">Training</span>
+                                <span class="job-tag">Remote</span>
+                            </div>
+                        </div>
+                        <button class="btn ai-btn-main btn-sm mt-2">View details</button>
+                    </div>
+
+                    <!-- Job card 3 -->
+                    <div class="job-card">
+                        <div class="d-flex justify-content-between flex-wrap">
+                            <div>
+                                <h5 class="job-title">IT Support & Systems Intern</h5>
+                                <p class="job-meta mb-1">SmartNet · Irbid · Internship</p>
+                                <p class="job-meta-small mb-2">
+                                    Recommended based on your CV analysis (networking and IT support background).
+                                </p>
+                            </div>
+                            <div class="text-lg-end">
+                                <span class="job-tag">Internship</span>
+                                <span class="job-tag">On-site</span>
+                            </div>
+                        </div>
+                        <button class="btn ai-btn-main btn-sm mt-2">View details</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Side sections -->
+            <div class="col-12 col-lg-4">
+                <div class="dashboard-section mb-3">
+                    <h4 class="section-heading mb-3">Next steps</h4>
+                    <ul class="next-steps-list">
+                        <li>Upload your latest CV in PDF format.</li>
+                        <li>Make sure your CV includes your skills and technologies clearly.</li>
+                        <li>Confirm your major and graduation year in your profile.</li>
+                        <li>Apply to at least one recommended opportunity.</li>
+                    </ul>
+                </div>
+
+                <div class="dashboard-section">
+                    <h4 class="section-heading mb-3">Profile summary</h4>
+                    <p class="profile-line"><span>Major:</span> Computer Science</p>
+                    <p class="profile-line"><span>Graduation year:</span> 2026</p>
+                    <p class="profile-line"><span>Location:</span> Irbid, Jordan</p>
+                    <p class="profile-line"><span>Account status:</span> Active</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
