@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AIConnect - Admin Dashboard</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body class="ai-bg">
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg landing-nav">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="../assets/img/CHaa.png" alt="AIConnect" class="nav-logo me-2">
+                <span class="nav-title">AIConnect</span>
+            </a>
+
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+                data-bs-target="#adminNav" aria-controls="adminNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end" id="adminNav">
+                <ul class="navbar-nav mb-2 mb-lg-0 align-items-lg-center">
+                    <li class="nav-item me-lg-3">
+                        <a class="nav-link nav-link-light active" aria-current="page" href="AdminDashboard.html">
+                            Dashboard
+                        </a>
+                    </li>
+                    <li class="nav-item me-lg-3">
+                        <a class="nav-link nav-link-light" href="#pending">
+                            Pending companies
+                        </a>
+                    </li>
+                    <li class="nav-item me-lg-3">
+                        <a class="nav-link nav-link-light" href="#support">
+                            Support requests
+                        </a>
+                    </li>
+                    <li class="nav-item mt-2 mt-lg-0">
+                        <a href="Login.html" class="btn btn-outline-light btn-sm px-3">Logout</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container dashboard-container py-4">
+
+        <!-- Header -->
+        <div class="row align-items-center mb-4">
+            <div class="col-12 col-md-8">
+                <h2 class="dashboard-title">
+                    Welcome, <span class="highlight-name">Admin</span>
+                </h2>
+                <p class="dashboard-subtitle">
+                    Review new company registrations, manage accounts, and resolve support requests.
+                </p>
+            </div>
+            <div class="col-12 col-md-4 text-md-end mt-3 mt-md-0">
+                <a href="#" class="btn ai-btn-ghost">System settings</a>
+            </div>
+        </div>
+
+        <!-- Stats -->
+        <div class="row g-3 mb-4">
+            <div class="col-12 col-md-4">
+                <div class="stat-card">
+                    <div class="stat-label">Pending companies</div>
+                    <div class="stat-number">4</div>
+                    <div class="stat-hint">Companies awaiting verification and approval.</div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-4">
+                <div class="stat-card">
+                    <div class="stat-label">Active students</div>
+                    <div class="stat-number">128</div>
+                    <div class="stat-hint">Students currently registered in the platform.</div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-4">
+                <div class="stat-card">
+                    <div class="stat-label">Open support requests</div>
+                    <div class="stat-number">6</div>
+                    <div class="stat-hint">Requests from students or companies needing help.</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row g-4">
+
+            <!-- Pending Companies -->
+            <div class="col-12 col-lg-8" id="pending">
+                <div class="dashboard-section">
+                    <div class="d-flex justify-content-between align-items-center flex-wrap mb-3">
+                        <h4 class="section-heading mb-0">Pending company approvals</h4>
+                        <span class="text-white-50 small">Approve or reject based on provided info</span>
+                    </div>
+
+                    <!-- Company row 1 -->
+                    <div class="admin-row mb-3">
+                        <div class="admin-row-left">
+                            <h5 class="admin-row-title">TechBridge Solutions</h5>
+                            <p class="admin-row-meta mb-0">
+                                Email: hr@techbridge.com · Phone: 07XXXXXXXX · Status: <span class="status-pill pending">Pending</span>
+                            </p>
+                            <p class="admin-row-meta-small mb-0">
+                                Registered by: HR Full Name · Submitted documents: (Demo)
+                            </p>
+                        </div>
+
+                        <div class="admin-row-actions">
+                            <button class="btn btn-sm ai-btn-main">Approve</button>
+                            <button class="btn btn-sm ai-btn-ghost">Reject</button>
+                        </div>
+                    </div>
+
+                    <!-- Company row 2 -->
+                    <div class="admin-row mb-3">
+                        <div class="admin-row-left">
+                            <h5 class="admin-row-title">CloudWay</h5>
+                            <p class="admin-row-meta mb-0">
+                                Email: hr@cloudway.com · Phone: 07XXXXXXXX · Status: <span class="status-pill pending">Pending</span>
+                            </p>
+                            <p class="admin-row-meta-small mb-0">
+                                Registered by: HR Full Name · Submitted documents: (Demo)
+                            </p>
+                        </div>
+
+                        <div class="admin-row-actions">
+                            <button class="btn btn-sm ai-btn-main">Approve</button>
+                            <button class="btn btn-sm ai-btn-ghost">Reject</button>
+                        </div>
+                    </div>
+
+                    <!-- Company row 3 -->
+                    <div class="admin-row">
+                        <div class="admin-row-left">
+                            <h5 class="admin-row-title">SmartNet</h5>
+                            <p class="admin-row-meta mb-0">
+                                Email: hr@smartnet.com · Phone: 07XXXXXXXX · Status: <span class="status-pill pending">Pending</span>
+                            </p>
+                            <p class="admin-row-meta-small mb-0">
+                                Registered by: HR Full Name · Submitted documents: (Demo)
+                            </p>
+                        </div>
+
+                        <div class="admin-row-actions">
+                            <button class="btn btn-sm ai-btn-main">Approve</button>
+                            <button class="btn btn-sm ai-btn-ghost">Reject</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Right Side: Support -->
+            <div class="col-12 col-lg-4" id="support">
+                <div class="dashboard-section mb-3">
+                    <h4 class="section-heading mb-3">Support requests</h4>
+
+                    <div class="support-card mb-2">
+                        <p class="support-title mb-1">Student account issue</p>
+                        <p class="support-meta mb-0">From: student@email.com</p>
+                        <p class="support-meta-small mb-0">“I can’t upload my CV, please help.”</p>
+                        <button class="btn ai-btn-main btn-sm mt-2">Mark as resolved</button>
+                    </div>
+
+                    <div class="support-card mb-2">
+                        <p class="support-title mb-1">Company verification question</p>
+                        <p class="support-meta mb-0">From: hr@company.com</p>
+                        <p class="support-meta-small mb-0">“How long does approval take?”</p>
+                        <button class="btn ai-btn-main btn-sm mt-2">Mark as resolved</button>
+                    </div>
+
+                    <div class="support-card">
+                        <p class="support-title mb-1">Job offer edit request</p>
+                        <p class="support-meta mb-0">From: hr@company.com</p>
+                        <p class="support-meta-small mb-0">“We need to update our job requirements.”</p>
+                        <button class="btn ai-btn-main btn-sm mt-2">Mark as resolved</button>
+                    </div>
+                </div>
+
+                <div class="dashboard-section">
+                    <h4 class="section-heading mb-3">Quick actions</h4>
+                    <ul class="next-steps-list">
+                        <li>Approve or reject pending companies.</li>
+                        <li>Review reported user issues.</li>
+                        <li>Monitor system activity and quality.</li>
+                        <li>Help maintain platform reliability.</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
